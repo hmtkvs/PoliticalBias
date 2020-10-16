@@ -17,7 +17,7 @@ class Tweets_Handler():
     def __init__(self):
     
         #Credentials
-        with open("credentials.yaml", 'r') as ymlfile:
+        with open("credentials.yml", 'r') as ymlfile:
             self.cfg = yaml.safe_load(ymlfile)
         
         self.username = self.cfg['username']#'hmtkvs'

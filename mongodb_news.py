@@ -20,7 +20,7 @@ class News_Handler():
     def __init__(self):
     
         #Credentials
-        with open("credentials.yaml", 'r') as ymlfile:
+        with open("credentials.yml", 'r') as ymlfile:
             cfg = yaml.safe_load(ymlfile)
         
         self.username = cfg['username']#'hmtkvs'
