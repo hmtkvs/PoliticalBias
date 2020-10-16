@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 .credentials.yml
+credentials.yml
