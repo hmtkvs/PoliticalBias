@@ -93,10 +93,10 @@ class Tweets_Handler():
         
             
     def twitter_credentials(self):
-        consumer_key = self.cfg['consumer_key_1']#'xgVFQivHLeGS1gR5as4fAbpKl'
-        consumer_secret = self.cfg['consumer_secret_1']#'x4RSE6HDXIE3OySB9xZOi27isfdI3keDJxCDbIejSZLDRejQ0z'
-        access_token = self.cfg['access_token_1']#'1218182611270610950-lpBqh4VtvJ76HbS8nBgIzHB5PfNZPm'
-        access_secret = self.cfg['access_secret_1']#'rLNMpxmFrAffgOZwSU4vtKGZ5ial6aqD1PyJghZgZ3x2H'
+        consumer_key = self.cfg['consumer_key_1']
+        consumer_secret = self.cfg['consumer_secret_1']
+        access_token = self.cfg['access_token_1']
+        access_secret = self.cfg['access_secret_1']
 
         auth = OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_secret)
