@@ -21,12 +21,12 @@ class Tweets_Handler():
         with open("credentials.yml", 'r') as ymlfile:
             self.cfg = yaml.safe_load(ymlfile)
             
-        self.username = self.cfg['username']#'hmtkvs'
-        self.password = self.cfg['password']#'Asdasd94-35'
+        self.username = self.cfg['username']
+        self.password = self.cfg['password']
         
-        self.database = self.cfg['database']#'bias'
-        self.collection = self.cfg['collection_tweets_2']#'TwitterData_2'
-        #self.api_key = cfg['news_api_key']#'189ee9100e854338aaa9d4e4f992a2cf'
+        self.database = self.cfg['database']
+        self.collection = self.cfg['collection_tweets_2']
+        #self.api_key = cfg['news_api_key']
         
         self.api = ''
         
@@ -116,10 +116,10 @@ class Tweets_Handler():
         self.alltweets = []        
             
     def twitter_credentials(self):
-        consumer_key = self.cfg['consumer_key_2']#'1nH6oFydh6bzoG549R4D15rmt'
-        consumer_secret = self.cfg['consumer_secret_2']#'XrbSFMSNtDWBCwpKqa9NThK4K5PwRHgmlDsVhRASSkvVkHuid3'
-        access_token = self.cfg['access_token_2']#'1218182611270610950-YkMoaEseTmbcPHrpWsjnM0rISlMl5X'
-        access_secret = self.cfg['access_secret_2']#'3coIgtkHQbo5fqcHCrZNRQD9A2bLyu9UkRdg1R31iQ1xm'
+        consumer_key = self.cfg['consumer_key_2']
+        consumer_secret = self.cfg['consumer_secret_2']
+        access_token = self.cfg['access_token_2']
+        access_secret = self.cfg['access_secret_2']
 
         auth = OAuthHandler(consumer_key, consumer_secret)
         auth.set_access_token(access_token, access_secret)
