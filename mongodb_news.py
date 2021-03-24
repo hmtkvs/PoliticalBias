@@ -23,16 +23,16 @@ class News_Handler():
         with open("credentials.yml", 'r') as ymlfile:
             cfg = yaml.safe_load(ymlfile)
         
-        self.username = cfg['username']#'hmtkvs'
-        self.password = cfg['password']#'Asdasd94-35'
+        self.username = cfg['username']
+        self.password = cfg['password']
         
         
          
         #Parameters for the NewsAPI
         self.keyword = 'election' + '&'
-        self.database = cfg['database']#'bias'
-        self.collection = cfg['collection_news']#'NewsData'
-        self.api_key = cfg['news_api_key']#'189ee9100e854338aaa9d4e4f992a2cf'
+        self.database = cfg['database']
+        self.collection = cfg['collection_news']
+        self.api_key = cfg['news_api_key']
         ##Date
         date_time = datetime.now()
         self.startDate = str(date_time.strftime("%Y-%m-%d")) + '&'
